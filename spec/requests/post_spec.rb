@@ -9,14 +9,14 @@ RSpec.describe "Posts", type: :request do
   end
 
   describe "POST /create" do
-    def create_post(title , body)
-      post post_index_path, params:{
-        post:{
-          title: title,
-          body: body
-        }
-      }
-    end
+    # def create_post(title , body)
+    #   post post_index_path, params:{
+    #     post:{
+    #       title: title,
+    #       body: body
+    #     }
+    #   }
+    # end
 
     context "with valid params" do
       it "creates a new Post and redirects" do
